@@ -1,8 +1,8 @@
 rnd=$RANDOM
-grp=az204-m01-appservices-$rnd
+grp=web-adv-blazorapp-$rnd
 loc=westeurope
 appPlan=appservices-$rnd
-mvcapp=mvc-devops-$rnd
+app=blazorapp-$rnd
 
 # create a resource group
 az group create -n $grp -l $loc
@@ -12,4 +12,4 @@ az appservice plan create -n $appPlan -g $grp --sku F1
 
 # create and upload blazor app using az webapp up - execute from within ./blazor-skills
 
-az webapp up -n blazorapp-$rnd -g $grp -p $appPlan -l $loc -r "DOTNET|6.0"
+az webapp up -n $app -g $grp -p $appPlan -l $loc -r "DOTNET|6.0"
