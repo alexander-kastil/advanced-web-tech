@@ -1,7 +1,7 @@
 rnd=$RANDOM
 grp=web-adv-blazorapp-$rnd
 loc=westeurope
-appPlan=appservices-$rnd
+appPlan=blazorservices-$rnd
 app=blazorapp-$rnd
 
 # create a resource group
