@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace SkillsApi
 {
-    // [Authorize]
+    [Authorize]
     [Route("api/skills")]
     public class SkillsController : Microsoft.AspNetCore.Mvc.Controller
     {
