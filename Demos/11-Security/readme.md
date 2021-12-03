@@ -5,4 +5,4 @@
 
 ## Labs
 
-[Azure Static Web Apps](https://docs.microsoft.com/en-us/learn/paths/azure-static-web-apps/)
+[Secure Applications using Microsoft Identity](https://docs.microsoft.com/en-us/learn/modules/identity-application-types/)
