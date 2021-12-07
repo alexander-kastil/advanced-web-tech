@@ -4,7 +4,7 @@ async function doAuth() {
 
     const config = {
         auth: {
-            clientId: "eeb155cb-d4c6-4864-9184-cf10a6e02715",
+            clientId: "4e8c88a7-aa80-4cd5-ae0f-1d6624a7e1dd",
             authority: "https://login.microsoftonline.com/d92b247e-90e0-4469-a129-6a32866c0d0a/",
             redirectUri: "http://localhost:8080",
         },
