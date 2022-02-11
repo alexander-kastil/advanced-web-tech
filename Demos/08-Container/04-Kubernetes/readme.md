@@ -37,25 +37,3 @@ Cleanup:
 kubectl delete service skillsui
 kubectl delete deployment skillsui
 ```
-
-> Note: Just in case you want to host on a classic Webserver (ie. IIS) you would have to configure URL Rewrite for Angular Subroutes
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-    <system.webServer>
-        <rewrite>
-            <rules>
-                <rule name="SPA" stopProcessing="true">
-                    <match url=".*" />
-                    <conditions logicalGrouping="MatchAll">
-                    <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-                    <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-                    </conditions>
-                    <action type="Rewrite" url="./index.html" />
-                </rule>
-            </rules>
-        </rewrite>
-    </system.webServer>
-</configuration>
-```
