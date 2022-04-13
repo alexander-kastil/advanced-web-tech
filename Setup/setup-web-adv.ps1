@@ -8,12 +8,12 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 choco install googlechrome -y
 choco install microsoft-edge -y
 choco install vscode -y
-choco install dotnetcore-sdk -y
-choco install dotnet-5.0-sdk -y
+choco install nodejs --version=14.15.0 -y
 choco install dotnet-6.0-sdk -y
 choco install azure-cli -y
 choco install git -y
 choco install gitextensions -y
+choco install gh -y
 choco install curl -y
 choco install 7zip -y
 choco install nvm -y
@@ -34,18 +34,15 @@ code --install-extension redhat.vscode-yaml
 code --install-extension angular.ng-template
 code --install-extension 1tontech.angular-material
 code --install-extension mikael.angular-beastcode
-code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension mdickin.markdown-shortcuts
 code --install-extension mhutchie.git-graph 
+code --install-extension ms-dotnettools.blazorwasm-companion
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 
 # Refresh Path Env
 Write-Host "Refresh Path Env - 4/6" -ForegroundColor yellow
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-
-nvm install 12.18.1
-nvm install 14.17.5
-nvm use 14.17.5
 
 # Install Node.js Tools
 npm i -g webpack webpack-cli gulp
