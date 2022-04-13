@@ -4,7 +4,7 @@
 - Configuring & Hosting Websites using NGINX
 - WSL 2 & Docker Desktop Configuration
 - Understanding & Building Docker Containers
--	Using Containers to provide a development environment
+- Using Containers to provide a development environment
 - Using Kubernetes on your local Developer Machine
 
 ## Labs

@@ -98,6 +98,7 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 - Benefits of using WSL
 - Script based WSL 2 & Docker Configuration
 - Creating and Executing Docker Containers for Web Apps
+- Using Containers to provide a development environment
 - Hosting Single Page Applications in Containers using NGINX
 
 ## Introduction to Real Time- & Offline Apps
