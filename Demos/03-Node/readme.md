@@ -6,7 +6,10 @@
 
 [Node Version Manager (NVM) for Windows](https://github.com/coreybutler/nvm-windows)
 
-[Yeoman](https://yeoman.io/)
+## Demos 
+
+- Using Node as a Dev Tool
+- Json-Server - A mock REST Api
 
 ## Labs
 
