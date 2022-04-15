@@ -6,7 +6,7 @@
 
 ## Branching Types
 
-[GitFlow](https://danielkummer.github.io/git-flow-cheatsheet/)
+[Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/)
 
 [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
 
