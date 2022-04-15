@@ -12,11 +12,11 @@
 
 ## Tools & Extensions
 
-[Gitflow Extension](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
-
 [GitHub linker](https://marketplace.visualstudio.com/items?itemName=gimenete.github-linker)
 
 [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+[Gitflow Extension](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
 
 ## Labs
 
