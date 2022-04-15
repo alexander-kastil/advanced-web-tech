@@ -25,7 +25,7 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 ## Using Visual Studio Code and Developer Toolchain Setup
 
 - Visual Studio Code Essentials (Settings, Keybinding, ...)
-- Organizing Monorepos (multible projectes) using VS Code Workspaces
+- Organizing Monorepos (multiple projectes) using VS Code Workspaces
 - Useful Extensions for Visual Studio Code
 - Using Online Editors: Stackblitz, GitHub Codespaces
 - Setup a modern Developer Workspace and Toolchain using Scripts
