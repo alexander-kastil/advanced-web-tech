@@ -6,16 +6,16 @@ Bei den eingesetzten Sprachen, JavaScript / TypeScript und C#, legen wir Wert da
 Nach Abschluss dieses Seminars haben die Teilnehmer einen guten Überblick über modernes "Full-Stack-Web-Development"
 
 - Visual Studio Code effektiv einsetzen und Developer Toolchain Setup
-- Git & Github: Source Control, Markdown, Issues & Pull Requests
+- Git & Github: Source Control, Markdown, Issues, Branching Strategien & Pull Requests
 - Objektorientiertes JavaScript & TypeScript schreiben
 - Node.js verstehen und einsetzen
-- Implementieren eines Resposive User Interfaces mit CSS Grid & Flexbox
-- Verwenden von Bootstrap 5 und SaSS 
+- Implementieren eines Resposive User Interfaces mit CSS Grid & Flexbox, Bootstrap 5 und SaSS
 - Designing & Implementing Api’s mit .Net Core, Node.js & Graph QL
 - Kennen von aktuellen Single Page Aplication Frameworks: Angular, React, Blazor
 - Entwickeln von Containeriserten WebApps mit Windows Subsystem for Linux 2 (WSL 2)
 - Implementieren von Real Time Anwendungen & Offlineverfügbarkeit
 - Verwenden von Tokenbasierender Authentifizierung in Single Page Apps
+- Veröffentlichen von Apps nach Azure
 
 
 Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Nach jedem Module werden den Teilnehmern eine Auswahl von freien Übungen mit Lösung oder Alternativen Self Learning Labs zur Vertiefung angeboten.
