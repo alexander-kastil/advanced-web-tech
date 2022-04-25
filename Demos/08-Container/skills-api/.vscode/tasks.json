@@ -32,9 +32,8 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/SkillsApi.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "--project",
+                "${workspaceFolder}/SkillsApi.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
