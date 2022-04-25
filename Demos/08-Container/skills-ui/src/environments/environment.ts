@@ -6,5 +6,5 @@ declare global {
 
 export const environment = {
   production: false,
-  apiUrl: window['env'].API_URL,
+  apiUrl: 'http://localhost:3000/skills/',
 };

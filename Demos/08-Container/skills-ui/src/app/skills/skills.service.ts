@@ -10,6 +10,6 @@ export class SkillsService {
   constructor(public client: HttpClient) {}
 
   getSkills() {
-    return this.client.get<Skill[]>(environment.apiurl);
+    return this.client.get<Skill[]>(environment.apiUrl);
   }
 }
