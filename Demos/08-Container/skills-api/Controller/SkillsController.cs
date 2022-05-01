@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace SkillsApi
 {
     // [Authorize]
-    [Route("api/skills")]
+    [Route("skills")]
     public class SkillsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private SkillDBContext ctx;
