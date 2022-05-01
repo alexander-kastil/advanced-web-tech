@@ -18,6 +18,7 @@ COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
 
 # docker build --rm -f "dockerfile" -t skillsui:config-inject .
 # docker run -d --rm -p 5052:80 skillsui:config-inject
+# docker run -d --rm -p 5052:80 skillsui:config-inject --env ENV_API_URL="https://food-api-staging-4591.azurewebsites.net/skills"
 # http://localhost:5052/
 
 # Publish Image to dockerhub
