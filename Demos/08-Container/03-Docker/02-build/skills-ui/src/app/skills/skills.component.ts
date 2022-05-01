@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillsService } from './skills.service';
 import { Skill } from './skill.model';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-skills',
@@ -10,6 +11,7 @@ import { Skill } from './skill.model';
 export class SkillsComponent implements OnInit {
   constructor(private service: SkillsService) {}
 
+  url = environment.apiUrl;
   skills: Skill[] = [];
   selected: Skill;
 
