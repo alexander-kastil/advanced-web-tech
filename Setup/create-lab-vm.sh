@@ -5,7 +5,6 @@ vmname=labvm-$rnd
 user=azlabadmin
 pwd=Lab@dmin1234
 # Windows 10 image names change frequently. To get the current img name use: az vm image list -f "Windows-10" -l westeurope  --all -o table
-img=MicrosoftWindowsDesktop:Windows-10:win10-21h2-pro:latest
 
 az group create -n $grp -l $loc
 
