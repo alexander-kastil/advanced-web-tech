@@ -1,50 +1,20 @@
-# Using Node as a Dev Tool
+## json-server
 
-[npm CLI Documentation](https://docs.npmjs.com/cli-documentation/)
+[json-server](https://github.com/typicode/json-server)
 
-## Tools installation
-
-List your global node packages:
+Install json-server:
 
 ```
-npm list -g --depth=0
-```
-Install sample global requirements:
-
-```
-nvm install 14.18.0
-nvm use 14.18.0
-npm i -g webpack@5.60.0 webpack-cli@4.9.1 gulp@4.0.2 http-server@14.0.0 
+npm i -g json-server
 ```
 
-## Http-Server
-
-[http-server](https://github.com/http-party/http-server)
-
-## Gulp
-
-[Gulp.js](https://gulpjs.com/)
-
-Run a gulp task: 
+Start json-server from within proj. directory (node-dev-tool):
 
 ```
-gulp babel
-gulp compile-sass
+json-server db.json
 ```
 
-## Webpack
+Test json-server:
 
-[Webpack](https://webpack.js.org/)
-
-Run webpack: 
-
-```
-webpack
-```
-> Note: Uses `webpack.config.js` by default
-
-## Auditing Security Issues
-
-[npm audit](https://docs.npmjs.com/cli/audit.html)
-
-![audit](_images/npm-audit.png)
+- Install [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+- Execute steps in `demo-rest-calls.http`
