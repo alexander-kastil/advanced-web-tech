@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SkillsApi {
     // [Authorize]
-    [Route ("api/demos")]
+    [Route ("demos")]
     public class DemosController : Microsoft.AspNetCore.Mvc.Controller {
         private SkillDBContext ctx;
 

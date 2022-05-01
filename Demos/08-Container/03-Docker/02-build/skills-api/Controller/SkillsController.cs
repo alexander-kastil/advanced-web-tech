@@ -1,50 +1,55 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace SkillsApi
 {
     // [Authorize]
-    [Route("api/topics")]
-    public class TopicsController : Microsoft.AspNetCore.Mvc.Controller
+    [Route("skills")]
+    public class SkillsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private SkillDBContext ctx;
 
-        public TopicsController(SkillDBContext dbctx)
+        public SkillsController(SkillDBContext dbctx)
         {
             ctx = dbctx;
         }
 
-        // http://localhost:5000/api/topics
+        // http://localhost:5000/api/skills
         [HttpGet]
-        public ActionResult<Topic[]> Get()
+        public ActionResult<Skill[]> Get()
         {
-            return this.ctx.Topics.ToArray();
+            return this.ctx.Skills.ToArray();
         }
 
-        // http://localhost:5000/api/topics/1
+        // http://localhost:5000/api/skills/1
         [HttpGet("{id}")]
-        public ActionResult<Topic> Get(int id)
+        public ActionResult<Skill> Get(int id)
         {
-            return ctx.Topics.FirstOrDefault(v => v.id == id);
+            return ctx.Skills.FirstOrDefault(v => v.Id == id);
         }
 
-        // http://localhost:5000/api/topics
-        [HttpPost]
-        public IActionResult Post([FromBody] Topic m)
+        [HttpGet]
+        [Route("init")]
+        public IActionResult Init()
         {
-            if (m.id == 0)
+            return Ok();
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] Skill m)
+        {
+            if (m.Id == 0)
             {
-                ctx.Topics.Add(m);
+                ctx.Skills.Add(m);
             }
             else
             {
-                ctx.Topics.Attach(m);
+                ctx.Skills.Attach(m);
                 ctx.Entry(m).State = EntityState.Modified;
             }
 
@@ -56,7 +61,7 @@ namespace SkillsApi
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var v = ctx.Topics.FirstOrDefault(m => m.id == id);
+            var v = ctx.Skills.FirstOrDefault(m => m.Id == id);
             if (v != null)
             {
                 ctx.Remove(v);
