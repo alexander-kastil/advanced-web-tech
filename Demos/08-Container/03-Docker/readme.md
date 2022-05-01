@@ -1,12 +1,6 @@
-# Docker & Kubernetes
+# Docker 
 
-
-
-
-
-> Note: An advanced Docker & Kubernetes Test can be found [here](../containers/readme.md)
-
-## Using Containers
-
-- Use [Food App](https://github.com/ARambazamba/food-app) to demonstrate containers
-
+- Configure Docker
+- Build and run apps in Containers
+    - Net 6 Api
+    - Angular UI
