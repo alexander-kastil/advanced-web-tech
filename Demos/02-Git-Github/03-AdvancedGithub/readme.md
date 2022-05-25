@@ -60,6 +60,7 @@ Finish a release:
 ```
 git flow release finish  RELEASE
 ```
+
 ## Forking Workflow - Getting Updates for Class Demos
 
 ![forking-wf](_images/forking-workflow.jpg)

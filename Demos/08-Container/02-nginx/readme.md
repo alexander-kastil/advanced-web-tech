@@ -1,41 +1,13 @@
-# Tooling
+# NGINX
 
-## Windows Terminal
+[NGINX](https://www.nginx.com/)
 
-2 Versions:
+[NGINX Documentation](https://docs.nginx.com/)
 
-- [Stable](https://aka.ms/terminal)
-- [Preview](https://aka.ms/terminal-preview)
+## Develop agains NGINX Docker Image
 
-### Setup
-
-Can be installed using Microsoft Store or using [Chocolatery](https://chocolatey.org/):
+Download & Start Base Image
 
 ```
-choco install microsoft-windows-terminal -y
+docker run nginx
 ```
-
-> Note: You can execute `setup-wt.ps1` to complete both tasks. Use an elevated Powershell promt
-
-### Shortcuts
-
-Open current Folder in Windows Terminal (wt.exe):
-
-```
-wt -d .
-```
-
-![wt](../_images/wt.gif)
-
-
-## Remote Development
-
-[Remote Development Pack - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-
-[Remote - WSL - VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-
-## Tutorials
-
-[Remote Development over SSH](https://code.visualstudio.com/docs/remote/ssh-tutorial)
-
-[Remote development in Containers](https://code.visualstudio.com/docs/remote/containers-tutorial)
