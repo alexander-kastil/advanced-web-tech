@@ -1,4 +1,3 @@
-import * as $ from 'jquery'; //Non ES6 Moduel import
 import addDays from 'date-fns/addDays';
 import { Voucher } from './Voucher';
 
@@ -186,6 +185,7 @@ export class TypesDemos {
     useThirdPartyLib() {
         let dt = new Date(1990, 3, 2);
         const newDate = addDays(dt, 10);
+        console.log(newDate);
     }
 
     introArrays() {

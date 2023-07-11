@@ -5,7 +5,6 @@ import { GenericsDemos } from './generics';
 import { InterfacesDemos } from './interfaces';
 import { ModulesDemos } from './modules';
 import { ObjectDemos } from './objects';
-import { RxJSDemos } from './rxjs';
 import { ServicesDemos } from './services';
 import { TypesDemos } from './types';
 
@@ -21,7 +20,7 @@ export function loadContent(page) {
             if (resp != null) {
                 let workbench = document.querySelector('#workbench');
                 if (workbench) {
-                    workbench.innerHTML = `<div id='sampleHeading'><h3></h3><br/>Source: ${page}</div>${resp.data}`;
+                    workbench.innerHTML = `<div id='heading'><h3></h3><br/>Source: ${page}</div>${resp.data}`;
                 }
             }
         })
@@ -40,7 +39,7 @@ export class Loader {
                 if (resp != null) {
                     let workbench = document.querySelector('#workbench');
                     if (workbench) {
-                        workbench.innerHTML = `<div id='sampleHeading'><h3></h3><br/>Source: ${page}</div>${resp.data}`;
+                        workbench.innerHTML = `<div id='heading'><h3></h3><br/>Open F12 Dev Tools Console - Source: ${page}</div>${resp.data}`;
                     }
                 }
             })
@@ -63,7 +62,6 @@ class Demos {
     objects = new ObjectDemos();
     services = new ServicesDemos();
     modules = new ModulesDemos();
-    rxjs = new RxJSDemos();
 }
 
 export var demo = new Demos();

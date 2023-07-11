@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { from, Observable } from 'rxjs';
 import { Voucher } from './Voucher';
 import { Skill } from './skill.model';
 
@@ -133,9 +132,5 @@ export class VoucherService {
                     return reject(err);
                 });
         });
-    }
-
-    getVouchersObs(): Observable<Voucher[]> {
-        return from(this.getVouchers());
     }
 }
