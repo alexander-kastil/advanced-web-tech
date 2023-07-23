@@ -8,7 +8,6 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 choco install googlechrome -y
 choco install microsoft-edge -y
 choco install vscode -y
-choco install nodejs --version=14.15.0 -y
 choco install dotnet-6.0-sdk -y
 choco install azure-cli -y
 choco install git -y
@@ -43,6 +42,10 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 Write-Host "Refresh Path Env - 4/6" -ForegroundColor yellow
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+# Install Node.js
+nvm install 16.15.0
+nvm use 16.15.0
 
 # Install Node.js Tools
 npm i -g webpack webpack-cli gulp
