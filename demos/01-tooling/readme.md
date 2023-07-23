@@ -2,6 +2,7 @@
 
 - Visual Studio Code Settings
 - Visual Studio Code Extension
+- Emmet
 - Online Editors
 - Setup Developer Toolchain using Script
 

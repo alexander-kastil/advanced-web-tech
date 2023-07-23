@@ -2,19 +2,19 @@
 
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
-- [Requirements / Tooling](./Tooling)
-  - [Git & GitHub Basics](./Tooling/01-Github)
-  - [Visual Studio Code Intro](./Tooling/02-VSCode)
-  - [Document Repos using Markdown](./Tooling/03-Markdown)
-  - [Introduction to Azure CLI](./Tooling/04-CLI)
-  - [Using Azure Passes](./Tooling/05-AzurePass)
-  - [Using the Visual Studio Code REST Client Extension](./Tooling/07-REST-Client)
-  - [Setup WSL & Docker Support on Windows](./Tooling/08-Docker-WSL)
-- [Instructor Demos & Labs](./Demos)
-- [Lab Machine Setup including an optional Azure hosted Lab VM](./Setup)
-  - [Create Azure Lab Virtual Machine (optional)](./Setup/#labvm)
-  - [Install required class software](./Setup/#software)
-  - [Fork & Clone Class Repo and configure GitHub requirements](/Setup#fork)
+- [Requirements / tooling](./tooling)
+  - [Git & GitHub Basics](./tooling/01-Github)
+  - [Visual Studio Code Intro](./tooling/02-VSCode)
+  - [Document Repos using Markdown](./tooling/03-Markdown)
+  - [Introduction to Azure CLI](./tooling/04-CLI)
+  - [Using Azure Passes](./tooling/05-AzurePass)
+  - [Using the Visual Studio Code REST Client Extension](./tooling/07-REST-Client)
+  - [Setup WSL & Docker Support on Windows](./tooling/08-Docker-WSL)
+- [Instructor Demos & Labs](./demos)
+- [Lab Machine Setup including an optional Azure hosted Lab VM](./setup)
+  - [Create Azure Lab Virtual Machine (optional)](./setup/#labvm)
+  - [Install required class software](./setup/#software)
+  - [Fork & Clone Class Repo and configure GitHub requirements](/setup#fork)
 
 ## Recommended Online Accounts and Ressources
 
