@@ -16,7 +16,6 @@ choco install gh -y
 choco install curl -y
 choco install 7zip -y
 choco install nvm -y
-choco install gh -y
 
 # Intall VS Code Extensions
 Write-Host "VS Code Extensions - 5/6" -ForegroundColor yellow
