@@ -1,3 +1,4 @@
+@import 'main-grid.scss';
 @import 'vars.scss';
 
 .topMenu {
@@ -23,6 +24,7 @@
   background-color: $ws-bg;
   padding-left: $space;
   padding-bottom: $space;
+  height: 100%;
 }
 
 #heading{

@@ -1,0 +1,33 @@
+.grid  {
+    min-width: 400px;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 85px auto;
+    grid-template-columns: 80px auto;
+    grid-template-areas:
+      "toolbar toolbar"
+      "sidebar workbench";
+
+      @media only screen and (max-width: 960px) {
+      grid-template-columns: auto;
+      grid-template-areas:
+        "toolbar"
+        "workbench"
+    }
+  }
+
+.gdToolbar {
+  grid-area: toolbar;
+}
+
+.gdSidebar {
+  grid-area: sidebar;
+  background-color: lightblue;
+}
+
+.gdWorkbench {
+    grid-area: workbench;
+    height: calc(100vh - 85px);
+}
