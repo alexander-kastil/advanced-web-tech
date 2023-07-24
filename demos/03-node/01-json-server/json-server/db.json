@@ -20,5 +20,11 @@
       "name": "Langos",
       "id": 5
     }
+  ],
+  "dogs": [
+    "Soi",
+    "Giron",
+    "Cleo",
+    "Flora"
   ]
 }
