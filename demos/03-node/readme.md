@@ -6,6 +6,12 @@
 
 [Node Version Manager (NVM) for Windows](https://github.com/coreybutler/nvm-windows)
 
+List your globally installed node packages:
+
+```
+npm list -g --depth=0
+```
+
 ## Demos 
 
 - Using Node as a Dev Tool
