@@ -1,0 +1,17 @@
+{
+  "name": "json-server-demo",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alexander Pajer",
+    "email": "alexander.pajer@integrations.at"
+  },
+  "description": "a simple demo for json-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
