@@ -20,10 +20,10 @@
 
 ## Labs
 
-[Communicate effectively on GitHub by using Markdown](https://docs.microsoft.com/en-us/learn/modules/communicate-using-markdown/)
+[Communicate effectively on GitHub by using Markdown](https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/)
 
-[Learning Path - Introduction to version control with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/)
+[Learning Path - Introduction to version control with Git](https://learn.microsoft.com/en-us/training/paths/intro-to-vc-git/)
 
-[Manage repository changes by using pull requests on GitHub](https://docs.microsoft.com/en-us/learn/modules/manage-changes-pull-requests-github/)
+[Manage repository changes by using pull requests on GitHub](https://learn.microsoft.com/en-us/training/modules/manage-changes-pull-requests-github/)
 
-[Build continuous integration (CI) workflows by using GitHub Actions](https://docs.microsoft.com/en-us/learn/modules/github-actions-ci/)
+[Build continuous integration (CI) workflows by using GitHub Actions](https://learn.microsoft.com/en-us/training/modules/github-actions-ci/)

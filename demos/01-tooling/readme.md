@@ -8,4 +8,4 @@
 
 ## Labs
 
-[Introduction to Visual Studio Code for Web Developers](https://docs.microsoft.com/en-us/learn/modules/develop-web-apps-with-vs-code/1-introduction)
+[Develop web applications with Visual Studio Code](https://learn.microsoft.com/en-us/training/modules/develop-web-apps-with-vs-code/)
