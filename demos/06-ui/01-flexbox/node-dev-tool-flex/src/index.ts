@@ -1,28 +1,67 @@
-import { FoodService } from './food-service';
-import { Car } from './car';
+import axios from 'axios';
+import { ClassesDemos } from './classes';
+import { FunctionDemos } from './functions';
+import { GenericsDemos } from './generics';
+import { InterfacesDemos } from './interfaces';
+import { ModulesDemos } from './modules';
+import { ObjectDemos } from './objects';
+import { ServicesDemos } from './services';
+import { TypesDemos } from './types';
 
-console.log(`Manually init util`);
+//export method to global namespace - otherwise is is not available for function call
 
-let service = new FoodService('http://localhost:3000/food');
-service.log('food service init');
+(<any>window).loadIt = loadContent;
 
-service.getFood().then((food) => console.log(`current food: ${food}`));
-
-console.log(`Init State`);
-
-let food = { name: 'Langos' };
-
-service.addFood(food).then((resp) => console.log('new food added:', resp));
-
-function driveCar() {
-    let porsche = new Car();
-    porsche.drive();
+export function loadContent(page) {
+    let path = './src/' + page;
+    axios
+        .get(path)
+        .then((resp) => {
+            if (resp != null) {
+                let workbench = document.querySelector('#workbench');
+                if (workbench) {
+                    workbench.innerHTML = `<div id='heading'><h3></h3><br/>Source: ${page}</div>${resp.data}`;
+                }
+            }
+        })
+        .catch((msg) => {
+            console.log(msg.responseText);
+        });
 }
 
-driveCar();
+//Exposing Class to GlobalNamespace
+export class Loader {
+    load(page) {
+        let path = './src/' + page;
+        axios
+            .get(path)
+            .then((resp) => {
+                if (resp != null) {
+                    let workbench = document.querySelector('#workbench');
+                    if (workbench) {
+                        workbench.innerHTML = `<div id='heading'><h3></h3><br/>Open F12 Dev Tools Console - Source: ${page}</div>${resp.data}`;
+                    }
+                }
+            })
+            .catch((msg) => {
+                console.log(msg.responseText);
+            });
+    }
+}
 
-// //export method to global namespace - otherwise is is not available for function call
-// (<any>window).drive = driveCar;
+//exporting an object
+(<any>window).loader = new Loader();
 
-// //export class to global namespace
-// (<any>window).state = new State();
+//Using export from webpack.config.js
+class Demos {
+    types = new TypesDemos();
+    classes = new ClassesDemos();
+    functions = new FunctionDemos();
+    interfaces = new InterfacesDemos();
+    generics = new GenericsDemos();
+    objects = new ObjectDemos();
+    services = new ServicesDemos();
+    modules = new ModulesDemos();
+}
+
+export var demo = new Demos();
