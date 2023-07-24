@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 export class FoodService {
-    constructor(private url: string) {}
+    constructor(private url: string) { }
 
-    log() {
-        console.log('hello word logged from util');
+    log(parm: string) {
+        console.log('log: ' + parm);
     }
 
     async getFoodFetch() {

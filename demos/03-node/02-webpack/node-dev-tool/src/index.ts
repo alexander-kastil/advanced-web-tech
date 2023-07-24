@@ -4,9 +4,9 @@ import { Car } from './car';
 console.log(`Manually init util`);
 
 let service = new FoodService('http://localhost:3000/food');
-service.log();
+service.log('food service init');
 
-service.getFoodFetch().then((data) => console.log(`current food: ${data}`));
+service.getFood().then((food) => console.log(`current food: ${food}`));
 
 console.log(`Init State`);
 
