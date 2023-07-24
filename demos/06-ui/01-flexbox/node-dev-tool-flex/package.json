@@ -1,0 +1,40 @@
+{
+  "name": "nodebasics",
+  "version": "1.0.0",
+  "author": "Alexander Pajer",
+  "license": "GNU General Public License v3.0",
+  "description": "Introduction to Node based Dev",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "serve": "http-server -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "1.4.0",
+    "date-fns": "2.30.0",
+    "gulp": "^4.0.2",
+    "linqts": "1.15.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "~18.11.5",
+    "autoprefixer": "^10.4.12",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^9.0.0",
+    "postcss-loader": "^7.0.1",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

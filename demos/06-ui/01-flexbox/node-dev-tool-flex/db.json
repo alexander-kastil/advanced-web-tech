@@ -1,0 +1,26 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Wurstknödel"
+    },
+    {
+      "id": 2,
+      "name": "Sarmale"
+    },
+    {
+      "name": "Langos",
+      "id": 3
+    },
+    {
+      "name": "Langos",
+      "id": 4
+    }
+  ],
+  "dogs": [
+    "Soi",
+    "Giron",
+    "Cleo",
+    "Flora"
+  ]
+}
