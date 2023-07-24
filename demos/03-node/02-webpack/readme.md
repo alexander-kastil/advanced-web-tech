@@ -4,11 +4,6 @@
 
 ## Tools installation
 
-List your global node packages:
-
-```
-npm list -g --depth=0
-```
 Install sample global requirements:
 
 ```
