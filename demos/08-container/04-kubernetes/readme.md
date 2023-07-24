@@ -16,24 +16,24 @@ Enable Kubernetes in Docker Desktop:
 Create a Deployment:
 
 ```
-kubectl apply -f skillsui.yaml
+kubectl apply -f config-api.yaml
 ```
 
 Expose using a Service:
 
 ```
-kubectl expose deployment skillsui --type=LoadBalancer --port=8080
+kubectl expose deployment config-api --type=LoadBalancer --port=8080
 ```
 
 Forward the port to Service
 
 ![port-forward](_images/port-forward.png)
 
-> Note: Can also be done using: `kubectl port-forward pods/skillsui-5656cfd5b8-gc2m9 8060:80 -n default`
+> Note: Can also be done using: `kubectl port-forward pods/config-api-5656cfd5b8-gc2m9 8060:80 -n default`
 
 Cleanup:
 
 ```
-kubectl delete service skillsui
-kubectl delete deployment skillsui
+kubectl delete service config-api
+kubectl delete deployment config-api
 ```
