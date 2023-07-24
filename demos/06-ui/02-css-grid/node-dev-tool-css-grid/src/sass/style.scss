@@ -1,24 +1,49 @@
-﻿@import "./vars.scss";
-@import "./flexbox.scss";
+@import 'main-grid.scss';
+@import 'vars.scss';
 
-@mixin mouse {
+.topMenu {
+  display: flex;
+  flex-direction: row;
+  padding: $space;
+  background-color: $menu-bg;
+  color: white;
+  font-size: 1.5rem;
+  min-width: 800px;
+}
+
+.topMenu div {
+  margin: 0.5rem;
+  cursor: pointer;  
+}
+
+.topMenu div:hover {
+  text-decoration: underline;
+}
+
+#workbench {
+  background-color: $ws-bg;
+  padding-left: $space;
+  padding-bottom: $space;
+  height: 100%;
+}
+
+#heading{
+  margin-bottom: $space;
+  padding-bottom: 0.3rem;
+  border-bottom: $space solid $border;
+}
+
+ul{
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
   cursor: pointer;
+  margin: 0.5rem 0;
+  list-style-type: none;
 }
 
-@mixin big-font {
-  font-size: 18px;
-}
-
-mainDiv {
-  background-color: $darkBackground;
-  @include big-font;
-
-  &:hover {
-    background-color: $mediumBackground;
-    @include mouse;
-  }
-}
-
-.workbench {
-  min-height: 300px;
+li:hover {
+  text-decoration: underline;
 }
