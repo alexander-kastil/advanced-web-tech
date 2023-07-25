@@ -1,7 +1,6 @@
 import { List } from "linqts";
-import { httpClient } from "./httpClient";
 import { Skill } from "./model";
-import { SkillsService } from "./SkillsService";
+import { SkillsService } from "./skills.service";
 
 document.addEventListener("DOMContentLoaded", function (event) {
   let service = new SkillsService();
@@ -12,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     data.forEach(skill => {
       trs += `<tr><td>${skill.name}</td></tr>`;
     });
+
     document.querySelector("#tblSkills").innerHTML = `
     <table class="table">
         <thead class="thead-dark">
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //sum
   service.Skills.subscribe((data: Skill[]) => {
     let netListOf = new List(data);
+
     document.getElementById("sSum").innerText =
       "Summe Ids: " + netListOf.Sum(el => el.id).toString();
   });

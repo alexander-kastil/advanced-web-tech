@@ -1,4 +1,4 @@
-import { httpClient } from "./httpClient";
+import { httpClient } from "./http-client";
 import { BehaviorSubject } from "rxjs";
 import { Skill } from "./model";
 
