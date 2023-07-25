@@ -8,36 +8,37 @@ import { ObjectDemos } from './objects';
 import { ServicesDemos } from './services';
 import { TypesDemos } from './types';
 
+//Variante 1
 //export method to global namespace - otherwise is is not available for function call
 
-(<any>window).loadIt = loadContent;
+// (<any>window).loadIt = loadContent;
 
-export function loadContent(page) {
-    let path = './src/' + page;
-    axios
-        .get(path)
-        .then((resp) => {
-            if (resp != null) {
-                let workbench = document.querySelector('#workbench');
-                if (workbench) {
-                    workbench.innerHTML = `<div id='heading'><h3></h3><br/>Source: ${page}</div>${resp.data}`;
-                }
-            }
-        })
-        .catch((msg) => {
-            console.log(msg.responseText);
-        });
-}
+// export function loadContent(page) {
+//     let path = './src/' + page;
+//     axios
+//         .get(path)
+//         .then((resp) => {
+//             if (resp != null) {
+//                 let workbench = document.querySelector('#workbench');
+//                 if (workbench) {
+//                     workbench.innerHTML = `<div id='heading'><h3></h3><br/>Source: ${page}</div>${resp.data}`;
+//                 }
+//             }
+//         })
+//         .catch((msg) => {
+//             console.log(msg.responseText);
+//         });
+// }
 
+//Variante 2 - aktiv
 //Exposing Class to GlobalNamespace
 export class Loader {
     load(page) {
-        let path = './src/' + page;
-        axios
-            .get(path)
+        const path = './src/' + page;
+        axios.get(path)
             .then((resp) => {
                 if (resp != null) {
-                    let workbench = document.querySelector('#workbench');
+                    const workbench = document.querySelector('#workbench');
                     if (workbench) {
                         workbench.innerHTML = `<div id='heading'><h3></h3><br/>Open F12 Dev Tools Console - Source: ${page}</div>${resp.data}`;
                     }
@@ -52,7 +53,7 @@ export class Loader {
 //exporting an object
 (<any>window).loader = new Loader();
 
-//Using export from webpack.config.js
+// Variante 3 - webpack.config.js
 class Demos {
     types = new TypesDemos();
     classes = new ClassesDemos();
