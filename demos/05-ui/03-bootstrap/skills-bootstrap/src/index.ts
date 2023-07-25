@@ -2,7 +2,7 @@ import { List } from "linqts";
 import { Skill } from "./model";
 import { SkillsService } from "./skills.service";
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", () => {
   let service = new SkillsService();
 
   //table

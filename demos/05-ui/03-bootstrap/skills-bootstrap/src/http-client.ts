@@ -1,11 +1,13 @@
 import { Observable, from } from "rxjs";
 
-export class httpClient {
-  getObservable<T>(url: string): Observable<T> {
-    let p = new Promise<T>((resolve, reject) => {
+export class HttpClient {
+
+  get<T>(url: string): Observable<T> {
+    let data = new Promise<T>((resolve, reject) => {
       fetch(url)
-        .then(data => {
-          resolve(data.json());
+        .then(resp => {
+          console.log("response from mock httpclient:", resp);
+          resolve(resp.json());
         })
         .catch(err => {
           console.log("error calling service");
@@ -13,6 +15,6 @@ export class httpClient {
           return reject(err);
         });
     });
-    return from(p);
+    return from(data);
   }
 }
