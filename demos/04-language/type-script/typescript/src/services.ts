@@ -26,7 +26,7 @@ export class ServicesDemos {
             method: 'POST',
             body: JSON.stringify(skill),
             headers: {
-                Accept: 'application/json',
+                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
         };
