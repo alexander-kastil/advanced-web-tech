@@ -1,8 +1,7 @@
-import { TableHelper } from "./TableHelper";
-import * as $ from "jquery";
+import { TableHelper } from "./table-helper";
 
-$(document).ready(() => {
+window.addEventListener('load', function () {
   var div: HTMLElement = document.querySelector("#table");
   var th = new TableHelper();
-  th.addHTML(div);
-});
+  th.attachTable(div);
+})
