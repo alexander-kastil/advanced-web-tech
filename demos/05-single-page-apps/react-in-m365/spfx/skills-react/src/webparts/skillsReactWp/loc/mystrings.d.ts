@@ -1,4 +1,4 @@
-declare interface ISkillsWpWebPartStrings {
+declare interface ISkillsReactWpWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
@@ -12,7 +12,7 @@ declare interface ISkillsWpWebPartStrings {
   AppOutlookEnvironment: string;
 }
 
-declare module 'SkillsWpWebPartStrings' {
-  const strings: ISkillsWpWebPartStrings;
+declare module 'SkillsReactWpWebPartStrings' {
+  const strings: ISkillsReactWpWebPartStrings;
   export = strings;
 }

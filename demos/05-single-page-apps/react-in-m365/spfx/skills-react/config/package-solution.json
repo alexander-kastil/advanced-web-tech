@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "spfx-skills-client-side-solution",
-    "id": "7763a413-06bc-4a5b-b9fb-67683b9017eb",
+    "name": "skills-react-client-side-solution",
+    "id": "a2015f06-1df0-456a-abea-2e4b0f183f7a",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -12,14 +12,14 @@
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.17.4"
+      "mpnId": "Undefined-1.16.0"
     },
     "metadata": {
       "shortDescription": {
-        "default": "spfx-skills description"
+        "default": "skills-react description"
       },
       "longDescription": {
-        "default": "spfx-skills description"
+        "default": "skills-react description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,14 +27,14 @@
     },
     "features": [
       {
-        "title": "spfx-skills Feature",
-        "description": "The feature that activates elements of the spfx-skills solution.",
-        "id": "b3ca0752-9ec3-479f-a6ec-9e8c28fe7aa0",
+        "title": "skills-react Feature",
+        "description": "The feature that activates elements of the skills-react solution.",
+        "id": "04ba4621-2d8d-48ab-af01-c7d9453dd8f6",
         "version": "1.0.0.0"
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/spfx-skills.sppkg"
+    "zippedPackage": "solution/skills-react.sppkg"
   }
 }
