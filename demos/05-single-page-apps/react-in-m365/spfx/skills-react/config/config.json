@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "skills-react-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skillsReactWp/SkillsReactWpWebPart.js",
+          "manifest": "./src/webparts/skillsReactWp/SkillsReactWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SkillsReactWpWebPartStrings": "lib/webparts/skillsReactWp/loc/{locale}.js"
+  }
+}
