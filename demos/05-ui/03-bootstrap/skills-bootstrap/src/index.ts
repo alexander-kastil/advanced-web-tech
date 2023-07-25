@@ -3,7 +3,7 @@ import { httpClient } from "./httpClient";
 import { Skill } from "./model";
 import { SkillsService } from "./SkillsService";
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   let service = new SkillsService();
 
   //table
