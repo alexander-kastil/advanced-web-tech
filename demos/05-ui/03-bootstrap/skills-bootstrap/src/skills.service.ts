@@ -6,7 +6,7 @@ import { environment } from "./env";
 export class SkillsService {
   client: HttpClient;
   arrSkills: Skill[] = [];
-  Skills: BehaviorSubject<Skill[] | []>;
+  private Skills: BehaviorSubject<Skill[] | []>;
 
   constructor() {
     this.client = new HttpClient();
@@ -16,6 +16,10 @@ export class SkillsService {
       this.arrSkills = data;
       this.Skills.next(this.arrSkills);
     });
+  }
+
+  getSkills() {
+    return this.Skills.asObservable();
   }
 
   addSkill(s: Skill) {
