@@ -1,3 +1,6 @@
+$bg: #a1cbf5;
+$samllgap: 0.5rem;
+
 h1,
 h2 {
   font-family: Lato;
@@ -8,12 +11,12 @@ ul li {
 }
 
 .mainMenu div {
-  margin: 0.5rem;
+  margin: $samllgap;
   cursor: pointer;
 }
 
 .signPad {
-  background-color: lightblue;
+  background-color: $bg;
 }
 
 .section {
