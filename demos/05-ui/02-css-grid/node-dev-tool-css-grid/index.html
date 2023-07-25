@@ -6,8 +6,8 @@
 
   <body>
     <div class="grid">
-      <div class="gdToolbar">
-        <div class="topMenu">
+
+      <div class="gdToolbar topMenu">
           <div onclick="loader.load('types.html')">Types</div>
           <div onclick="loader.load('functions.html')">Functions</div>
           <div onclick="loader.load('objects.html')">Objects</div>
@@ -16,14 +16,18 @@
           <div onclick="loader.load('generics.html')">Generics</div>
           <div onclick="loader.load('modules.html')">Modules</div>
           <div onclick="loader.load('services.html')">Services</div>
-        </div>
       </div>
+      
       <div class="gdSidebar">
-        Sidebar Mock
+        <div id="sidebar">
+          mock sidebar
+        </div>  
       </div>
+      
       <div class="gdMainrow">
         <div id="workbench"></div>
       </div>
+    
     </div>      
   </body>
 </html>

@@ -1,20 +1,25 @@
-import { httpClient } from "./http-client";
+import { HttpClient } from "./http-client";
 import { BehaviorSubject } from "rxjs";
 import { Skill } from "./model";
+import { environment } from "./env";
 
 export class SkillsService {
-  client: httpClient;
+  client: HttpClient;
   arrSkills: Skill[] = [];
-  Skills: BehaviorSubject<Skill[] | []>;
+  private Skills: BehaviorSubject<Skill[] | []>;
 
   constructor() {
-    this.client = new httpClient();
+    this.client = new HttpClient();
     this.Skills = new BehaviorSubject(this.arrSkills);
 
-    this.client.getObservable<Skill[]>("http://localhost:3000/skills").subscribe(data => {
+    this.client.get<Skill[]>(environment.api).subscribe(data => {
       this.arrSkills = data;
       this.Skills.next(this.arrSkills);
     });
+  }
+
+  getSkills() {
+    return this.Skills.asObservable();
   }
 
   addSkill(s: Skill) {

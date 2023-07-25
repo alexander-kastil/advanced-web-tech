@@ -1,15 +1,14 @@
-import { List } from "linqts";
 import { Skill } from "./model";
 import { SkillsService } from "./skills.service";
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", () => {
   let service = new SkillsService();
 
   //table
-  service.Skills.subscribe((data: Skill[]) => {
-    let trs = "";
+  service.getSkills().subscribe((data: Skill[]) => {
+    let tblHtml = "";
     data.forEach(skill => {
-      trs += `<tr><td>${skill.name}</td></tr>`;
+      tblHtml += `<tr><td>${skill.name}</td></tr>`;
     });
 
     document.querySelector("#tblSkills").innerHTML = `
@@ -19,16 +18,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 <th>Skill</th>
             </tr>
         </thead>        
-        <tbody>${trs}</tbody>
+        <tbody>${tblHtml}</tbody>
     </table>`;
   });
 
   //sum
-  service.Skills.subscribe((data: Skill[]) => {
-    let netListOf = new List(data);
-
+  service.getSkills().subscribe((data: Skill[]) => {
     document.getElementById("sSum").innerText =
-      "Summe Ids: " + netListOf.Sum(el => el.id).toString();
+      "Summe Ids: " + data.length.toString();
   });
 
   document
