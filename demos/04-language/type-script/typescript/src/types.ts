@@ -1,5 +1,5 @@
 import addDays from 'date-fns/addDays';
-import { Voucher } from './Voucher';
+import { Voucher } from './voucher.model';
 
 export class TypesDemos {
     basicVariables() {

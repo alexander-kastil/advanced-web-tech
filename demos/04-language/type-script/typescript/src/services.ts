@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Voucher } from './Voucher';
+import { Voucher } from './voucher.model';
 import { Skill } from './skill.model';
 
 export class ServicesDemos {
