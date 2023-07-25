@@ -46,3 +46,7 @@ Run the project
 ```bash
 gulp serve
 ```
+
+## Labs
+
+[Develop web parts with the SharePoint Framework](https://learn.microsoft.com/en-us/training/modules/sharepoint-spfx-web-parts/)
