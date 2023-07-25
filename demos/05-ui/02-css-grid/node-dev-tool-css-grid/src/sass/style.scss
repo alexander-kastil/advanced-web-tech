@@ -20,11 +20,17 @@
   text-decoration: underline;
 }
 
+#sidebar{
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+}
+
 #workbench {
   background-color: $ws-bg;
   padding-left: $space;
   padding-bottom: $space;
-  height: 100%;
+  height: calc(100vh - 85px);
 }
 
 #heading{
