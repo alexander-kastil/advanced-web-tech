@@ -1,5 +1,4 @@
 import { Observable, from } from "rxjs";
-import { Skill } from "./model";
 
 export class httpClient {
   getObservable<T>(url: string): Observable<T> {

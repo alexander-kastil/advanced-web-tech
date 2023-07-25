@@ -1,4 +1,4 @@
-import { httpClient } from "./httpClient";
+import { httpClient } from "./http-client";
 import { BehaviorSubject } from "rxjs";
 import { Skill } from "./model";
 
@@ -10,7 +10,8 @@ export class SkillsService {
   constructor() {
     this.client = new httpClient();
     this.Skills = new BehaviorSubject(this.arrSkills);
-    this.client.getObservable<Skill[]>("skills.json").subscribe(data => {
+
+    this.client.getObservable<Skill[]>("http://localhost:3000/skills").subscribe(data => {
       this.arrSkills = data;
       this.Skills.next(this.arrSkills);
     });
