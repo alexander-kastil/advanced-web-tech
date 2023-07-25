@@ -1,13 +1,13 @@
-import * as _ from 'lodash';
+import * as lodash from 'lodash';
 
 export class ObjectDemos {
     objectsBasics() {
-        // Plain old JavaScript
+        // Plain old JavaScript -> anti pattern
         var myPerson = new Object();
-        // myPerson.smile = function(){...}
+        // myPerson.smile = function () { console.log('smile') };
 
         var otherPerson = <any>{};
-        otherPerson.smile = function () {};
+        otherPerson.smile = function () { console.log('smile') };
 
         let person: any = { Id: 1, Name: 'Giro' };
         person.walk = () => console.log(`I am ${person.Name} and I'm walking`);
@@ -26,23 +26,35 @@ export class ObjectDemos {
         }
 
         function getCar(make, model, value) {
+            // replace make: make ...
             return {
-                // with property value shorthand
-                // syntax, you can omit the property
-                // value if key matches variable
-                // name
                 make,
                 model,
                 value,
             };
         }
 
-        function getPersonClone(person: any) {
+        const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const dontDoThis = { ...arr }
+        const arrClone = [...arr]
+
+        function getPersonClone(person: { Id: number; Name: string, Address: { Street: string } }) {
+            // and create a shallow clone of the object	        
+            person.Address.Street = 'Hauptstrasse 2';
             return { ...person };
         }
 
-        let person: any = { Id: 1, Name: 'Martin' };
-        var cloned = getPersonClone(person);
+        let martin: any = {
+            Id: 1, Name: 'Martin', Address: {
+                Street: 'Hauptstrasse 1',
+            }
+        };
+        let job = { job: 'dev dude' };
+        let martinWithJob = { ...martin, ...job };
+
+        var cloned = getPersonClone(martin);
+        console.log('original', martin); // { Id: 1, Name: 'Martin', Address: { Street: 'Hauptstrasse 2' } }
 
         //Method definition shorthand
         function getBusES5(value) {
@@ -67,6 +79,10 @@ export class ObjectDemos {
     destructuring() {
         let fullPerson = { firstName: 'John', name: 'Doe', age: 17 };
         let { firstName, name } = fullPerson;
+        // shorthand for this:
+        // let firstName = fullPerson.firstName;
+        // let name = fullPerson.name;
+
         console.log(firstName + ', ' + name);
     }
 
@@ -94,11 +110,16 @@ export class ObjectDemos {
     }
 
     objAssign() {
-        var giro = { name: 'Giro' };
-        var result = Object.assign({}, giro, {
+        const giro = { name: 'Giro', age: 13 };
+
+        // shallow object cloning -> object componsition on a new object: {}
+        const clone = Object.assign({}, giro, {
             birth: new Date(),
         });
-        console.log('is this a copy or a clone?', result);
+
+        // object composition
+        const copy = Object.assign(giro, { birth: new Date() });
+        console.log('is this a copy or a clone?', clone);
     }
 
     valref() {
@@ -182,7 +203,7 @@ export class ObjectDemos {
             ],
         };
 
-        let copyPerson = _.cloneDeep(p);
+        let copyPerson = lodash.cloneDeep(p);
 
         copyPerson.name = 'Martin';
         copyPerson.dogs[0].dogname = 'Soitscherl';

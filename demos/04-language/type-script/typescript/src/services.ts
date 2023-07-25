@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Voucher } from './Voucher';
+import { Voucher } from './voucher.model';
 import { Skill } from './skill.model';
 
 export class ServicesDemos {
@@ -26,7 +26,7 @@ export class ServicesDemos {
             method: 'POST',
             body: JSON.stringify(skill),
             headers: {
-                Accept: 'application/json',
+                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
         };

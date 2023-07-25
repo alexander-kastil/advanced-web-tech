@@ -1,4 +1,4 @@
-import { Voucher } from './Voucher';
+import { Voucher } from './voucher.model';
 
 export class GenericsDemos {
     genericFunctions() {

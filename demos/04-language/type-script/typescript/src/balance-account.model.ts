@@ -1,4 +1,4 @@
-import { VoucherDetail } from './VoucherDetail';
+import { VoucherDetail } from './voucher-details.model';
 
 export class BalanceAccount {
     ID: number;

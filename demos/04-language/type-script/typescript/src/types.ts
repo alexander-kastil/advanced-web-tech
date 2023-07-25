@@ -1,5 +1,5 @@
 import addDays from 'date-fns/addDays';
-import { Voucher } from './Voucher';
+import { Voucher } from './voucher.model';
 
 export class TypesDemos {
     basicVariables() {
@@ -45,8 +45,8 @@ export class TypesDemos {
     }
 
     useLetConst() {
-        var index: number = 0;
-        var array = ['a', 'b', 'c'];
+        const index: number = 0;
+        const array = ['a', 'b', 'c'];
         for (let index: number = 0; index < array.length; index++) {
             console.log('Inside for ...' + index);
             console.log('Inside for ...' + array[index]);
@@ -55,7 +55,13 @@ export class TypesDemos {
         const pi = 3.14;
         //pi = 2;
 
-        const person = { name: 'john', age: 22 } as any;
+        class Person {
+            lastname?: string;
+            name: string;
+            age: number;
+        }
+
+        const person = { name: 'john', age: 22 } as Person;
         person.name = 'franz';
         person.lastname = 'huber';
     }
@@ -217,13 +223,13 @@ export class TypesDemos {
     }
 
     arrayHelpers() {
-        var fruits = [
+        var fruits: { name: string, quantity: number, price: number, region: string }[] = [
             { name: 'apples', quantity: 2, price: 3, region: 'europe' },
             { name: 'bananas', quantity: 0, price: 5, region: 'caribean' },
             { name: 'cherries', quantity: 5, price: 8, region: 'europe' },
         ]; //-> Json Objects from REST call
 
-        //typical ECMA Script 5 pattern
+        //typical ECMA Script 5 pattern - dont't use it
         var result = [];
         for (var i = 0; i < fruits.length; i++) {
             var item = fruits[i];
@@ -238,24 +244,27 @@ export class TypesDemos {
             fruit.quantity++;
         });
 
+        class fruit {
+            name: string;
+            quantity: number;
+            price: number;
+            region: string;
+        }
+
         //forEach using arrow function
-        fruits.forEach((item: any) => {
+        fruits.forEach((item: fruit) => {
             item.quantity++;
         });
 
         //forEach using arrow function without body
-        fruits.forEach((item) => item.quantity++);
+        fruits.forEach((item: fruit) => item.quantity++);
 
         //find -> returns first item
-        var cherry = fruits.find(function (fruit) {
-            return fruit.name === 'cherries';
-        });
+        var cherry = fruits.find(fruit => fruit.name === 'cherries');
         console.log(cherry);
 
         //filter -> returns array
-        var cheap = fruits.filter(function (item) {
-            return item.price < 6;
-        });
+        var cheap = fruits.filter(item => item.price < 6);
         console.log(cheap);
 
         //map -> shape arr
@@ -272,16 +281,17 @@ export class TypesDemos {
         //reduce:  You want to find a cumulative or concatenated value based on elements across the array
         let arr = [0, 1, 2, 3];
 
-        //typical ECMA Script 5 pattern
+        //typical ECMA Script 5 (anti) pattern - dont't use it
         var sum = 0;
         for (var i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
         // sum = 10
 
-        var total: number = arr.reduce(function (a, b) {
+        //reduce with initial value of 100
+        var total: number = arr.reduce((a, b) => {
             return a + b;
-        });
+        }, 100);
 
         var total: number = arr.reduce((a, b) => a + b, 0);
         console.log('total is : ' + total);
@@ -304,7 +314,6 @@ export class TypesDemos {
         console.log('launche so far: ', launches);
 
         //splice -> manipulate arrays
-
         var dogs = ['whippet', 'galgo espanol', 'magyar whistler', 'magyar agar'];
         dogs.splice(2, 0, 'chart polski');
         console.log(dogs); //["whippet", "galgo espanol", "chart polski", "magyar whistler", "magyar agar"]

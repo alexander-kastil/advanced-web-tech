@@ -1,20 +1,25 @@
+import addDays from 'date-fns/addDays';
+
 export class ClassesDemos {
     basicClasses() {
         class Voucher {
-            ID: number;
-            Text: string;
-            Amount: number;
-            Date: Date;
+            ID: number = 0;
+            Text: string = '';
+            Amount: number = 0;
+            Date: Date = new Date();
             Total?: number;
         }
 
-        let v: Voucher = new Voucher(); // v: {}
-        v.ID = 0;
+        let v: Voucher = new Voucher();
+        v.ID = 1;
         v.Text = 'Demo Voucher';
+        v.Date = addDays(new Date(), -10);
 
         console.log('vouchertext is:' + v['Text']);
 
         var vouchers = new Array<Voucher>();
+        const voucherArray: Voucher[] = [];
+
         var voucherA: Voucher = {
             ID: 1,
             Text: 'Media Markt',
@@ -60,7 +65,8 @@ export class ClassesDemos {
         console.log(jim.name + ' is alive: ' + jim.alive);
 
         class Dog {
-            constructor(private name: string, public breed: string) {}
+            // private or public creates a field and assigns the value
+            constructor(private name: string, public breed: string) { }
 
             barkName() {
                 return 'Wuff, my name is ' + this.name + ', I am a ' + this.breed;
@@ -76,20 +82,15 @@ export class ClassesDemos {
         console.log(dog.breed);
 
         class Invoice {
-            text: string;
-            paid: boolean;
-
-            constructor(Text: string = '', Paid: boolean = false) {
-                this.text = Text;
-                this.paid = Paid;
+            constructor(public Text: string = '', public Paid: boolean = false) {
             }
         }
 
         var b1: Invoice = new Invoice('Car Purchase');
         var b2: Invoice = new Invoice('Rösti für Freundin', true);
 
-        console.log('b1 with Text: ' + b1.text + ' was ' + b1.paid);
-        console.log('b2 with Text: ' + b2.text + ' was ' + b2.paid);
+        console.log('b1 with Text: ' + b1.Text + ' was ' + b1.Paid);
+        console.log('b2 with Text: ' + b2.Text + ' was ' + b2.Paid);
 
         class Smurf {
             readonly name: string;
@@ -131,7 +132,7 @@ export class ClassesDemos {
 
     inheritance() {
         class Dog {
-            constructor(public name: string) {}
+            constructor(public name: string) { }
 
             move(meters: number) {
                 console.log(this.name + ' moved ' + meters + 'm. ' + this.speed);
@@ -148,7 +149,7 @@ export class ClassesDemos {
             public speed: string = 'with up to 110 km/h';
 
             //method override
-            move(meters = 500) {
+            override move(meters = 500) {
                 console.log('Running ...' + meters + 'm. ' + this.speed);
                 //If you want to call implementation of base class use:
                 super.move(meters);
@@ -168,6 +169,7 @@ export class ClassesDemos {
 
         class Person {
             protected name: string;
+
             constructor(name: string) {
                 this.name = name;
             }
@@ -195,8 +197,7 @@ export class ClassesDemos {
         }
 
         class Grid {
-            constructor(public scale: number) {}
-
+            constructor(public scale: number) { }
             static origin: ICoordinate = <ICoordinate>{ x: 0, y: 0, z: 0 };
 
             calculateDistanceFromOrigin(point: { x: number; y: number }) {
@@ -270,7 +271,7 @@ export class ClassesDemos {
 }
 
 abstract class Department {
-    constructor(public name: string) {}
+    constructor(public name: string) { }
 
     printName(): void {
         console.log('Department name: ' + this.name);
