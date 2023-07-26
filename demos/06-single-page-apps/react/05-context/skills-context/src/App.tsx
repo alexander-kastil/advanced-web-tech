@@ -26,7 +26,6 @@ class App extends React.Component<any, IContext> {
   constructor(props: any) {
     super(props);
     this.state = {
-
       skills: [],
       original_skills: [],
       removeSkill:this.removeSkill,
@@ -37,8 +36,7 @@ class App extends React.Component<any, IContext> {
   }
 
   componentDidMount() {
-    this.loadData()
-    
+    this.loadData();
   }
 
   render() {

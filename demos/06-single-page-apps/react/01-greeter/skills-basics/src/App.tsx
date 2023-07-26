@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.css';
 import { Greeting } from './components/Greeting';
 import SkillList from './components/SkillList';
-import { Skill } from './skill';
+import { Skill } from './skill.model';
 
 const logo = require('./logo.svg');
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './SkillList.css';
-import { Skill } from '../skill';
+import { Skill } from '../skill.model';
 
 export interface SkillListProps {
 	skills: Skill[];
@@ -23,7 +23,7 @@ export default class SkillList extends React.Component<SkillListProps, SkillList
 	render() {
 		return (
 			<div className="container" hidden={!this.state.showList} >
-				<div>Your need the follwowing skills</div>
+				<div>Your need the following skills</div>
 				<ul>
 					{this.state.skills.map((item) => {
 						return (

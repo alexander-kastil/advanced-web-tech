@@ -6,9 +6,7 @@ import { SkillList } from './components/skill-list/skill-list';
 import axios from 'axios';
 
 function App() {
-
   const [skills, setSkills] = useState([])
-
   const user = { firstName: "SPFx", lastName: "Developer" };
 
   useEffect(() => {
