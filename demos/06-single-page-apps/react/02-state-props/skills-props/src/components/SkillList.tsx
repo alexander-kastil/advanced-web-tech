@@ -27,7 +27,7 @@ export default class SkillList extends React.Component<SkillListProps, SkillList
 			<div className="container">
 				<div>Your need the follwowing skills</div>
 				<ul>
-					{this.state.skills.map((item) => {
+					{this.props.skills.map((item) => {
 						return (
 							<li key={item.id} onClick={() => this.skillClicked(item)} className="li-skills">
 								{item.name}

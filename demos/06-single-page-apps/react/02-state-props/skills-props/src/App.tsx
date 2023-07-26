@@ -20,12 +20,11 @@ class App extends React.Component<any, AppState> {
 	}
 
 	componentDidMount() {
-		axios
-			.get('http://localhost:3000/skills.json')
-			.then((res) => {
-				this.setState((state, props) => ({ skills: res.data }));
-			})
-			.catch((err) => console.log('err fetching data: ', err));
+		axios.get('http://localhost:3000/skills.json')
+		.then((res) => {
+			this.setState((state, props) => ({ skills: res.data }));
+		})
+		.catch((err) => console.log('err fetching data: ', err));
 	}
 
 	render() {
