@@ -7,12 +7,12 @@
 .navbar{
     background-color: lightslategray;
     color: white;
-    height: 10vh;
+    height: 50px;
     padding: 1.8rem 1em;
 }
 
 .main{
     background-color: lightgray;
-    height: 90vh;
+    height: calc(100vh - 50px);
     padding: 1rem;
 }
