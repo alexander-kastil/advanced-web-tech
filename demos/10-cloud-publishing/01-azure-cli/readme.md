@@ -67,28 +67,37 @@ az extension list-available --output table
 az extension add --name <extension-name>
 ```
 
+Configure automatic installation of extensions:
+
+```bash
+az config set extension.use_dynamic_install=yes_without_prompt
+```
+
+Configure automatic updates:
+
+```bash
+az config set auto-upgrade.enable=yes
+```
+
 ### CLI Examples
 
 #### Create an App Service to host a Web App:
 
 ```bash
-rnd=$RANDOM
-grp=az204-appservice-$rnd
-appPlan=appservice-$rnd
-web=foodweb-$rnd
+env=dev
 loc=westeurope
+grp=skillsapp-$env
+acaenv=skill-$env
+img='arambazamba/weather-api'
 
 # create a resource group
 az group create -n $grp -l $loc
 
-# create an App Service plan
-az appservice plan create -n $appPlan -g $grp --sku B2
-```
+# create a container apps environment
+az containerapp env create -n $acaenv -g $grp -l $loc
 
-> Note: You could also execute `creat-app-service.azcli` or run the following remote script in Cloud Shell
-
-```
-curl https://raw.githubusercontent.com/ARambazamba/AZ-204/master/Labs/create-lab-vm.sh | bash
+# create a container apps service
+az containerapp create -n $apiApp-$env -g $grp --image $img --environment $acaenv --target-port 80 --ingress external
 ```
 
 ### Troubleshoot CLI
