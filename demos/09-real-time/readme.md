@@ -61,3 +61,9 @@ npm install -g angular-http-server
 cd .\dist\skills-ui-pwa\
 angular-http-server
 ```
+
+## Labs
+
+[Introduction to ASP.NET Core SignalR](https://learn.microsoft.com/en-us/training/modules/aspnet-core-signalr/)
+
+[Replace client-side polling with ASP.NET Core SignalR](https://learn.microsoft.com/en-us/training/modules/aspnet-core-signalr-polling-fix/)
