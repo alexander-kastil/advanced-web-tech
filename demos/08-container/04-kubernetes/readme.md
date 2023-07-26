@@ -31,9 +31,21 @@ Forward the port to Service
 
 > Note: Can also be done using: `kubectl port-forward pods/config-api-5656cfd5b8-gc2m9 8060:80 -n default`
 
+List deployments:
+
+```
+kubectl get deployments
+```
+
+List services:
+
+```
+kubectl get services
+```
+
 Cleanup:
 
 ```
-kubectl delete service config-api
-kubectl delete deployment config-api
+kubectl delete service configapi-load-balancer
+kubectl delete deployment configapi
 ```
