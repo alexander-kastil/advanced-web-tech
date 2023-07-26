@@ -1,3 +1,6 @@
 <app-skills-list [skills]="skills" (onSkillSelected)="skillSelected($event)"></app-skills-list>
 
-<pre>Selected Skill {{ selected | json}}</pre>
+<h3>Selected Skill:</h3>
+<pre>
+   <p>{{ selected | json}}</p>
+</pre>

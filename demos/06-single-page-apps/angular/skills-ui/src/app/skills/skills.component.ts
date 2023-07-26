@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { SkillsService } from './skills.service';
 import { Skill } from './skill.model';
 
@@ -8,7 +8,7 @@ import { Skill } from './skill.model';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent implements OnInit {
-  constructor(private service: SkillsService) {}
+  service = inject(SkillsService);
 
   skills: Skill[] = [];
   selected: Skill;
