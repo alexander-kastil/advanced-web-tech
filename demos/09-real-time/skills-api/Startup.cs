@@ -29,13 +29,6 @@ namespace SkillsApi {
             services.AddSingleton (typeof (IConfigurationRoot), configuration);
             var conStr = configuration["ConnectionStrings:SQLiteDBConnection"];
 
-            //EF
-
-            // SQL Server ... use "SQLServerDBConnection" ConString
-            // var conStr = configuration["ConnectionStrings:SQLServerDBConnection"];
-            // services.AddEntityFrameworkSqlServer ()
-            //     .AddDbContext<SkillDBContext> (options => options.UseSqlServer(conStr));
-
             // SQLite ... use "SQLiteDBConnection" ConString
             var conStrLite = configuration["ConnectionStrings:SQLiteDBConnection"];
             services.AddEntityFrameworkSqlite ().AddDbContext<SkillDBContext> (options => options.UseSqlite (conStrLite));
@@ -52,23 +45,6 @@ namespace SkillsApi {
                     .AllowAnyHeader ()
                     .AllowCredentials ());
             });
-
-            //Firebase
-
-            var fbProjectId = configuration["Firebase:ProjectId"];
-
-            services
-                .AddAuthentication (JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer (options => {
-                    options.Authority = "https://securetoken.google.com/" + fbProjectId;
-                    options.TokenValidationParameters = new TokenValidationParameters {
-                        ValidateIssuer = true,
-                        ValidIssuer = "https://securetoken.google.com/" + fbProjectId,
-                        ValidateAudience = true,
-                        ValidAudience = fbProjectId,
-                        ValidateLifetime = true
-                    };
-                });
 
             services.AddSwaggerGen (c => {
                 c.SwaggerDoc ("v1", new OpenApiInfo { Title = "Skills API", Version = "v1" });
@@ -102,12 +78,8 @@ namespace SkillsApi {
 
             //Cors
             app.UseCors ("allowAll");
-
             app.UseHttpsRedirection ();
-
             app.UseRouting ();
-
-            // app.UseAuthorization ();
 
             app.UseEndpoints (endpoints => {
                 endpoints.MapControllers ();
