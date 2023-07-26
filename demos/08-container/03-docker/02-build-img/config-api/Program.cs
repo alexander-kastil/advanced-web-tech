@@ -28,7 +28,7 @@ builder.Services.AddCors(o => o.AddPolicy("nocors", builder =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Food-Api", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Skills-Api", Version = "v1" });
 });
 
 var app = builder.Build();
@@ -43,7 +43,7 @@ app.UseCors("nocors");
 app.UseSwagger();
 app.UseSwaggerUI(c =>
    {
-       c.SwaggerEndpoint("/swagger/v1/swagger.json", "Config Api");
+       c.SwaggerEndpoint("/swagger/v1/swagger.json", "Skills Api");
        c.RoutePrefix = string.Empty;
    }
 );

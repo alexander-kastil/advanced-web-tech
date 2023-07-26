@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace AppSettingsWebApi.Controllers
+namespace SkillsApi
 {
     [Route("[controller]")]
     [ApiController]
