@@ -8,7 +8,6 @@ export interface ISkillListProps {
 }
 
 export const SkillList : FC<ISkillListProps> = (props: ISkillListProps) =>{
-
     return (
         <div className="container">
             {
