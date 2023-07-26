@@ -2,8 +2,6 @@
 
 ## Demo
 
----
-
 ### .NET 6 Skills Api
 
 - Requires [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
