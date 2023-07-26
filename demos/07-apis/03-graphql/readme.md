@@ -21,6 +21,7 @@ npm run devStart
     name
     author {
       id
+      name
     }
   }
 }
