@@ -7,9 +7,9 @@ import { Skill } from './skill.model';
   providedIn: 'root',
 })
 export class SkillsService {
-  constructor(public client: HttpClient) {}
+  constructor(public client: HttpClient) { }
 
   getSkills() {
-    return this.client.get<Skill[]>(environment.apiurl);
+    return this.client.get<Skill[]>(environment.api);
   }
 }
