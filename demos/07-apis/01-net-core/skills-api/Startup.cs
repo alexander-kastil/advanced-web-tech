@@ -30,7 +30,6 @@ namespace SkillsApi {
             var conStr = configuration["ConnectionStrings:SQLiteDBConnection"];
 
             //EF
-
             // SQL Server ... use "SQLServerDBConnection" ConString
             // var conStr = configuration["ConnectionStrings:SQLServerDBConnection"];
             // services.AddEntityFrameworkSqlServer ()

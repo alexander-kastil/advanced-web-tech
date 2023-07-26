@@ -36,6 +36,7 @@ code --install-extension mdickin.markdown-shortcuts
 code --install-extension mhutchie.git-graph 
 code --install-extension ms-dotnettools.blazorwasm-companion
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension adrianwilczynski.asp-net-core-snippet-pack
 
 # Refresh Path Env
 Write-Host "Refresh Path Env - 4/6" -ForegroundColor yellow

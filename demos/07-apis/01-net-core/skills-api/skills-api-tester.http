@@ -1,0 +1,7 @@
+### Get all skills
+GET https://localhost:5001/api/skills
+Accept: application/json
+
+### Get skill by id
+GET https://localhost:5001/api/skills/1 
+Accept: application/json
