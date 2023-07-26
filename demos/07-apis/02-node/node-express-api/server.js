@@ -80,8 +80,8 @@ app.put('/api', nocache, (req, res) => {
     res.send('Got a PUT request at /api');
 });
 
-app.delete('/api', nocache, (req, res) => {
-    res.send('Got a DELETE request at /api');
+app.delete('/api/:id', nocache, (req, res) => {
+    res.send('Got a DELETE request for id: ' + req.params.id);
 });
 
 app.listen(port,()=>{console.log('express - listen')});
