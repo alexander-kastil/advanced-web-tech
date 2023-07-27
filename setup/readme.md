@@ -15,7 +15,7 @@ To install Software run the script `setup-web-adv.ps1` from an elevated PowerShe
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/web-adv/main/setup/setup-web-adv.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/web-adv/master/setup/setup-web-adv.ps1'))
 ```
 
 > Note: This script will run for approx 15 min. 
