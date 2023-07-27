@@ -10,13 +10,13 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   title = 'ng-config-env';
   apiUrl = environment.apiUrl;
-  cfg: any;
+  result: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get(this.apiUrl + '/settings').subscribe((settings) => {
-      this.cfg = settings;
+    this.http.get(this.apiUrl + '/food').subscribe((settings) => {
+      this.result = settings;
     });
   }
 }
