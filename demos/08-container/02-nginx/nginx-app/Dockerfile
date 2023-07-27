@@ -3,7 +3,7 @@ LABEL author="Alexander Pajer"
 
 COPY . /usr/share/nginx/html
 
-# docker build --rm -f "dockerfile" -t nginxapp .
+# docker build --rm -f Dockerfile -t nginxapp .
 # docker run -d --rm -p 5050:80 nginxapp
 
 # http://localhost:5050/

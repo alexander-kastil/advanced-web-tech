@@ -16,7 +16,7 @@ COPY --from=node /app/dist/ng-skills /usr/share/nginx/html
 # Take from project folder
 COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
 
-# docker build --rm -f "dockerfile" -t skillsui .
+# docker build --rm -f Dockerfile -t skillsui .
 # docker run -d --rm -p 5052:80 skillsui
 # http://localhost:5052/
 
