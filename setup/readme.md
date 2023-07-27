@@ -9,13 +9,13 @@
 
 >Note: Create Lab VM is an optional step that you could execute in advance if you want to develop on Azure hosted VM. If you want to develop on your local machine you can skip this step.
 
-To install Software run the script `setup-az-204.ps1` from an elevated PowerShell prompt:
+To install Software run the script `setup-web-adv.ps1` from an elevated PowerShell prompt:
 
 ![run-as](_images/run-as.jpg)
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/az-204/main/setup/setup-az-204.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/web-adv/main/setup/setup-web-adv.ps1'))
 ```
 
 > Note: This script will run for approx 15 min. 
@@ -31,13 +31,13 @@ gh auth login
 Fork the class repository:
 
 ```bash
-gh repo fork https://github.com/arambazamba/az-204/
+gh repo fork https://github.com/arambazamba/web-adv/
 ```
 
 Download the forked repository:
 
 ```bash 
-gh repo clone https://github.com/<USERNAME>/az-204/
+gh repo clone https://github.com/<USERNAME>/web-adv/
 ```
 
 Set User and E-Mail:
