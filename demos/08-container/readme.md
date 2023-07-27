@@ -3,7 +3,7 @@
 - WSL 2: Introduction, Setup & Benefits
 - Setup frameworks & tools
 - Configure Docker Desktop Configuration
-- Configuring & Hosting Websites using NGINX
+- Hosting Websites in Containers using NGINX
 - Building & Publishing Docker Images
 - Using docker-compose to build & run multi-container applications
 - Using Kubernetes on your local Developer Machine
