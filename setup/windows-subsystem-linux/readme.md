@@ -1,8 +1,8 @@
 # Setup Windows Subsystem for Linux 2 - WSL2
 
-Requires Windows 10 - May 2020 Update or higher. To Update use this [link](https://www.microsoft.com/de-de/software-download/windows10).
+>Note: Requires Windows 10 - May 2020 Update or higher. To Update use this [link](https://www.microsoft.com/de-de/software-download/windows10).
 
-[Install WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install) in a Powershell Prompt:
+[Install WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install) in a Powershell Prompt with administrative privileges:
 
 ```powershell
 wsl --install

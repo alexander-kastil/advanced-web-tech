@@ -11,9 +11,9 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
   - [Setup WSL & Docker Support on Windows](./tooling/08-docker-wsl)
 - [Instructor Demos & Labs](./demos)
 - [Lab Machine setup including an optional Azure hosted Lab VM](./setup)
-  - [Create Azure Lab Virtual Machine (optional)](./setup/#labvm)
-  - [Install required class software](./setup/#software)
-  - [Fork & Clone Class Repo and configure GitHub requirements](/setup#fork)
+  - [Create Azure Lab Virtual Machine (optional)](./setup/)
+  - [Install required class software](./setup/)
+  - [Fork & Clone Class Repo and configure GitHub requirements](/setup)
 
 ## Recommended Online Accounts and Ressources
 

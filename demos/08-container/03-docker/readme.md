@@ -1,6 +1,5 @@
-# Docker 
+# Building & Publishing Docker Images 
 
-- Configure Docker
 - Build and run apps in Containers
     - Net 6 Api
     - Angular UI
