@@ -6,7 +6,6 @@
 - Hosting Websites in Containers using NGINX
 - Building & Publishing Docker Images
 - Using docker-compose to build & run multi-container applications
-- Using Kubernetes on your local Developer Machine
 - Run SQL Server Linux container images with Docker
 - Using devcontainer.json to provide container as a full-featured development environment
 
