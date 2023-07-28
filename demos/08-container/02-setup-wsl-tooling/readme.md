@@ -1,39 +1,49 @@
-# Windows Subsystem Linux 2 - Setup frameworks & tools
+# WSL Frameworks & Runtimes Setup
 
 [Introduction to Bash Scripting](https://www.taniarascia.com/how-to-create-and-use-bash-scripts/)
 
-### Node
+## Node & Angular CLI
 
 Install NVM (Node Version Manager):
 
-```
+```bash
 sudo apt-get install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 sudo apt-get install build-essential
 ```
 
-> Note: You might need to restart your WSL session after installation
+Install & use Node 16.x using NVM:
 
-### .NET 6 
+```bash
+nvm install 16.15.0
+nvm use 16.15.0
+```
 
-Register Packages:
+Install Angular CLI:
+
+```bash
+npm install -g @angular/cli
+``` 
+
+## .NET 6 SDK - Optional
+
+>Note: All required .NET Api's are available containerized at [https://hub.docker.com/repositories/arambazamba](https://hub.docker.com/repositories/arambazamba) if you want to skip .NET SDK installation. You need to sign up for a [free Docker Hub account](https://hub.docker.com/) to access the images.
+
+Install .NET 6 SDK:
 
 ```
 wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
-```
-Install .NET:
-
-```
 sudo apt-get update; \
 sudo apt-get install -y apt-transport-https && \
 sudo apt-get update && \
 sudo apt-get install -y dotnet-sdk-6.0
 ```
 
-### Azure CLI
+## Azure CLI
 
 ```
+sudo apt install curl
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-# install extensions on demandy
 az config set extension.use_dynamic_install=yes
+```
