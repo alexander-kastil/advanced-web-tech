@@ -1,4 +1,4 @@
-# Setup Container support using DockerDesktop & WSL2
+# Setup Container support using DockerDesktop using WSL 2
 
 This requires prev step - WSL Installation
 

@@ -1,9 +1,9 @@
 # Class Environment Setup
 
-- Install Software
-- [Install Windows Subsystem Linux - Optional](./windows-subsystem-linux/)
-- [Setup local container support - Optional](./docker/)
-- [Create Lab VM - Optional](./lab-vm/)
+1. Install Software - this document
+2. [Install Windows Subsystem Linux 2 - Optional](./windows-subsystem-linux/)
+3. [Setup Container support using DockerDesktop & WSL2 - Optional](./docker/)
+4. [Create Lab VM - Optional](./lab-vm/)
 
 ## Install Software
 
@@ -15,7 +15,7 @@ To install Software run the script `setup-web-adv.ps1` from an elevated PowerShe
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/web-adv/main/setup/setup-web-adv.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/web-adv/master/setup/setup-web-adv.ps1'))
 ```
 
 > Note: This script will run for approx 15 min. 

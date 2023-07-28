@@ -1,28 +1,8 @@
-# Setup Windows Subsystem for Linux 2 - WSL2
-
->Note: Requires Windows 10 - May 2020 Update or higher. To Update use this [link](https://www.microsoft.com/de-de/software-download/windows10).
-
-[Install WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install) in a Powershell Prompt with administrative privileges:
-
-```powershell
-wsl --install
-Restart-Computer
-```
-
-Finish installation of Ubuntu 20.04 LTS from the Microsoft Store and set wsl user and password:
-
-```
-user=labadmin
-pwd=Lab@dmin1234
-```
-
-![wsl-finish](_images/wsl-finish.png)
-
-## WSL Frameworks & Runtimes Setup
+# WSL Frameworks & Runtimes Setup
 
 [Introduction to Bash Scripting](https://www.taniarascia.com/how-to-create-and-use-bash-scripts/)
 
-### Node & Angular CLI
+## Node & Angular CLI
 
 Install NVM (Node Version Manager):
 
@@ -45,7 +25,7 @@ Install Angular CLI:
 npm install -g @angular/cli
 ``` 
 
-#### .NET 6 SDK - Optional
+## .NET 6 SDK - Optional
 
 >Note: All required .NET Api's are available containerized at [https://hub.docker.com/repositories/arambazamba](https://hub.docker.com/repositories/arambazamba) if you want to skip .NET SDK installation. You need to sign up for a [free Docker Hub account](https://hub.docker.com/) to access the images.
 
@@ -60,7 +40,7 @@ sudo apt-get update && \
 sudo apt-get install -y dotnet-sdk-6.0
 ```
 
-### Azure CLI
+## Azure CLI
 
 ```
 sudo apt install curl
