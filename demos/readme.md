@@ -27,7 +27,9 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 - Visual Studio Code Essentials (Settings, Keybinding, ...)
 - Organizing Monorepos (multiple projectes) using VS Code Workspaces
 - Useful Extensions for Visual Studio Code
-- Using Online Editors: Stackblitz, GitHub Codespaces
+- GitHub Codespaces
+- Fast HTML Coding using Emmet
+- Using GitHub Copilot & Copilot Chat
 - Setup a modern Developer Workspace and Toolchain using Scripts
 
 ## Introduction to Git & GitHub
@@ -35,8 +37,9 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 - Git's Role in modern Development & DevOps
 - Repo Documentation using Markdown
 - Using GitHub – Repos, Basic Commands, Branching & History
+- Branching Strategies, Pull Requests & Forks
+- Using Tags & Releases
 - Creating Issues and Linking them to Code 
-- Forking, Pull Requests & Git Flow
 - Understanding Continuous Integration and Deployment using GitHub Actions
 
 ## Node Based Development Basics
@@ -44,10 +47,11 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 - Node.js Role in modern Web Development
 - Node Basics & Configuration
 - Package Management using NPM & Yarn
+- Using global node tools: json-server, http-server, ...
 - Task Automation using NPM- & Gulp Scripts
-- Creating Webpack Bundles
+- Compilation & Bundling using Webpack & Vite
 
-## Language
+## Using JavaScript & TypeScript
 
 - History of ECMA Script Standards
 - TypeScript Overview & Language
@@ -61,15 +65,14 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 - ES6 Array Helpers & Utility Functions (Destructuring assignments, Spread, ...)
 - REST, Http Verbs, fetch and axios
 - Promises & Async Await
-- Introduchtion to Observables
 
 ## Designing & Implementing Api’s & Graphs
 
-- Rest Api’s Overview
+- REST Api’s Overview
 - Client Side & Server Side Data Models
-- Using Swagger to Design / Document the Api
-- Implementing Api’s using Common Frameworks (Node.js, .NET Core)
-- Implementing Graphs using GraphQL & Appllo Server
+- OpenAPI & Swagger
+- Implementing Api’s using Common Frameworks (Node Express, .NET, ...)
+- Providing View Models using GraphQL
 
 ## Implementing a Responsive User Interface
 
@@ -94,14 +97,17 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 
 ## Developing Containerized Web Apps with Windows Subsystem for Linux 2
 
-- WSL Introduction & Setup
+- Windows Subsystem for Linux 2 Introduction & Setup
 - Benefits of using WSL
-- Script based WSL 2 & Docker Configuration
-- Creating and Executing Docker Containers for Web Apps
-- Using Containers to provide a development environment
-- Hosting Single Page Applications in Containers using NGINX
+- Setup frameworks & tools in WSL
+- Configure Docker Desktop
+- Hosting web apps in Containers using NGINX
+- Building & Publishing Docker Images
+- Using docker-compose to build & run multi-container applications
+- Run SQL Server Linux container images with Docker
+- Using devcontainer.json to provide container as a full-featured development environment
 
-## Introduction to Real Time- & Offline Apps
+## Introduction to Real Time- & Progressive Web Apps
 
 - Use Cases for Real Time Apps
 - Common Real Time Libraries
@@ -118,6 +124,6 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 
 ## Introduction to Cloud Publishing
 
+- Introduction to Azure
 - Introduction to [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
-- Publish App to Cloud Services
-- Publish Containers
+- Publish Apps to Azure Static Web Apps & Azure Container Apps

@@ -10,13 +10,21 @@
 
 [JS Refactor :: JS CodeFormer](https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor)
 
-## Dump to current Folder - dumpExtensions.ps1
+## Demos
+
+## Allow Insecure localhost connections:
+
+```bash
+chrome://flags/#allow-insecure-localhost
+```
+
+## Dump installed extension to file - dumpExtensions.ps1
 
 ```
 code --list-extensions > ".\web-extensions.txt"
 ```
 
-## Import from current Folder - importExtensions.ps1
+## Import extensions from file - importExtensions.ps1
 
 ```
 foreach($line in Get-Content ".\web-extensions.txt") {
