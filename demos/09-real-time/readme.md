@@ -1,4 +1,4 @@
-# Progressive Web Apps and Real Time Apps
+# Introduction to Real Time- & Progressive Web Apps
 
 ## Demo
 

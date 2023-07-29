@@ -1,9 +1,9 @@
 # Developing Containerized Apps using Windows Subsystem Linux 2 - WSL 2
 
 - WSL 2: Introduction, Setup & Benefits
-- Setup frameworks & tools
-- Configure Docker Desktop Configuration
-- Hosting Websites in Containers using NGINX
+- WSL 2: Setup frameworks & tools
+- Configure Docker Desktop
+- Hosting web apps in Containers using NGINX
 - Building & Publishing Docker Images
 - Using docker-compose to build & run multi-container applications
 - Run SQL Server Linux container images with Docker
