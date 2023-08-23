@@ -27,9 +27,9 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 - Visual Studio Code Essentials (Settings, Keybinding, ...)
 - Organizing Monorepos (multiple projectes) using VS Code Workspaces
 - Useful Extensions for Visual Studio Code
-- GitHub Codespaces
+- GitHub Codespaces & DevContainers
 - Fast HTML Coding using Emmet
-- Using GitHub Copilot & Copilot Chat
+- Using GitHub Copilot, GitHub Copilot CLI & Copilot Chat
 - Setup a modern Developer Workspace and Toolchain using Scripts
 
 ## Introduction to Git & GitHub
@@ -69,6 +69,7 @@ Neue Themengebiete werden anhand von Folien, Demos und Beispielen erarbeitet. Na
 ## Designing & Implementing Api’s & Graphs
 
 - REST Api’s Overview
+- Relational vs NoSQL Databases: Use Cases & Examples
 - Client Side & Server Side Data Models
 - OpenAPI & Swagger
 - Implementing Api’s using Common Frameworks (Node Express, .NET, ...)
