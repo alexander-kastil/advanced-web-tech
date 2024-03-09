@@ -28,7 +28,7 @@ Zusätzlich werden neue Themengebiete anhand von Folien, Demos und Beispielen er
 - Fast HTML Coding using Emmet
 - AI Driven Development using Copilots
 
-## Zusammenarbeiten mit Git & GitHub
+## Source Control mit Git & GitHub
 
 - Git's Role in modern Development & DevOps
 - Repo Documentation using Markdown
