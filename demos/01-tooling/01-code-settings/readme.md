@@ -202,8 +202,8 @@ Copy settings.json & keybindings.json to `%APPDATA%\Code\User\settings.json`
     "window.zoomLevel": 2,
     "githubPullRequests.defaultMergeMethod": "squash",
     "vs-kubernetes": {
-        "vscode-kubernetes.helm-path.windows": "C:\\Users\\AlexanderPajer\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
-        "vscode-kubernetes.minikube-path.windows": "C:\\Users\\AlexanderPajer\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
+        "vscode-kubernetes.helm-path.windows": "C:\\Users\\AlexanderKastil\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
+        "vscode-kubernetes.minikube-path.windows": "C:\\Users\\AlexanderKastil\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
     }
 }
 ```

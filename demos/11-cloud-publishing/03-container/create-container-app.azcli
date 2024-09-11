@@ -4,8 +4,8 @@ loc=westeurope
 acaenv=food-$env
 apiApp=config-api
 uiApp=config-ui
-apiImg=arambazamba/$apiapp
-uiImg=arambazamba/$uiapp
+apiImg=alexander-kastil/$apiapp
+uiImg=alexander-kastil/$uiapp
 
 az group create -n $grp -l $loc
 

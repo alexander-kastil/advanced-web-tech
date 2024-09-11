@@ -3,7 +3,7 @@ grp=web-adv-$env
 loc=westeurope
 plan=config-api-wac-$env
 app=config-api-wac-$env
-img=arambazamba/config-api
+img=alexander-kastil/config-api
 
 az group create --name $grp --location $loc
 

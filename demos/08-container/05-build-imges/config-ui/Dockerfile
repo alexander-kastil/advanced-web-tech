@@ -1,6 +1,6 @@
 ##### Stage 1 - Create the build-image
 FROM node:16-alpine as build
-LABEL author="Alexander Pajer"
+LABEL author="Alexander Kastil"
 
 WORKDIR /app
 COPY . .
@@ -24,5 +24,5 @@ CMD ["/bin/sh",  "-c",  "envsubst < /usr/share/nginx/html/assets/env.template.js
 # browse using http://localhost:5052/
 
 # Publish Image to dockerhub
-# docker tag config-ui arambazamba/config-ui
-# docker push arambazamba/config-ui
+# docker tag config-ui alexander-kastil/config-ui
+# docker push alexander-kastil/config-ui

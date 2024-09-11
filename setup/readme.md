@@ -15,7 +15,7 @@ To install Software run the script `setup-web-adv.ps1` from an elevated PowerShe
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/web-adv/master/setup/setup-web-adv.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/alexander-kastil/web-adv/master/setup/setup-web-adv.ps1'))
 ```
 
 > Note: This script will run for approx 15 min. 
@@ -31,7 +31,7 @@ gh auth login
 Fork the class repository:
 
 ```bash
-gh repo fork https://github.com/arambazamba/web-adv/
+gh repo fork https://github.com/alexander-kastil/web-adv/
 ```
 
 Download the forked repository:

@@ -30,9 +30,9 @@ Add all files to Git: `git add .`
 
 Add a specific file to Git: `git add file.txt | *.ts`
 
-Commit files: `git commit -m "your checkin comment"`
+Commit files: `git commit -m "your check-in comment"`
 
-Get a spcific Commit: `git checkout <sha1>`
+Get a specific Commit: `git checkout <sha1>`
 
 ## Status & Updates
 
@@ -40,7 +40,7 @@ Show Commit logs: `git log`
 
 Check for remote updates: `git remote update`
 
-Show Status (Adds/Delets/Changes): `git status`
+Show Status (Adds/Deletes/Changes): `git status`
 
 ## Branching
 

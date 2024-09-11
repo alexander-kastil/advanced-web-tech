@@ -51,7 +51,7 @@ export const StaticTab = () => {
                 <Flex.Item styles={{
                     padding: ".8rem 0 .8rem .5rem"
                 }}>
-                    <Text size="smaller" content="(C) Copyright Alexander Pajer" />
+                    <Text size="smaller" content="(C) Copyright Alexander Kastil" />
                 </Flex.Item>
             </Flex>
         </Provider>
