@@ -22,5 +22,5 @@ ENTRYPOINT ["dotnet", "SkillsApi.dll"]
 # http://localhost:5051/api/skills
 
 # Publish Image to dockerhub
-# docker tag skillsservice arambazamba/skillsapi
-# docker push arambazamba/skillsapi
+# docker tag skillsservice alexander-kastil/skillsapi
+# docker push alexander-kastil/skillsapi

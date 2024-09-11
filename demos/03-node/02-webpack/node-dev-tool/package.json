@@ -1,7 +1,7 @@
 {
   "name": "nodebasics",
   "version": "1.0.0",
-  "author": "Alexander Pajer",
+  "author": "Alexander Kastil",
   "license": "GNU General Public License v3.0",
   "description": "Introduction to Node based Dev",
   "main": "index.js",

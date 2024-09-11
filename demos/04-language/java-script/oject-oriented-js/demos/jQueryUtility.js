@@ -34,7 +34,7 @@ function useMap() {
     debugger;
 
     var users = [
-      { id: 1, name: "Pajer" },
+      { id: 1, name: "Kastil" },
       { id: 2, name: "Schulz" },
       { id: 3, name: "Müller" }
     ];

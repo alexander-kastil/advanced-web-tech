@@ -2,7 +2,7 @@ env=dev
 loc=westeurope
 grp=skillsapp-$env
 acaenv=skill-$env
-img='arambazamba/skills-api'
+img='alexander-kastil/skills-api'
 
 # create a resource group
 az group create -n $grp -l $loc

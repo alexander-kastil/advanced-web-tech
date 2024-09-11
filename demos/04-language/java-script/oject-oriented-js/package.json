@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alexander Pajer",
+  "author": "Alexander Kastil",
   "license": "ISC",
   "dependencies": {
     "systemjs": "0.21.5"

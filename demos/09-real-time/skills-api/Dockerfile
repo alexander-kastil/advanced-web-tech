@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
-LABEL author="Alexander Pajer"
+LABEL author="Alexander Kastil"
 WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
@@ -28,5 +28,5 @@ ENTRYPOINT ["dotnet", "SkillsApi.dll"]
 # http://localhost:5051/api/skills
 
 # Publish Image to dockerhub
-# docker tag skillsservice arambazamba/skillsservice
-# docker push arambazamba/skillsservice
+# docker tag skillsservice alexander-kastil/skillsservice
+# docker push alexander-kastil/skillsservice

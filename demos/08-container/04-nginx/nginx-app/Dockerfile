@@ -1,5 +1,5 @@
 FROM nginx:alpine
-LABEL author="Alexander Pajer"
+LABEL author="Alexander Kastil"
 
 COPY . /usr/share/nginx/html
 

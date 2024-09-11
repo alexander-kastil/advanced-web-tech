@@ -16,7 +16,7 @@
 
 ## Git Flow
 
-[Git Flow Intoduction & Cheatsheet](https://danielkummer.github.io/)
+[Git Flow Introduction & Cheat sheet](https://danielkummer.github.io/)
 
 GitFlow is a branching model for Git, created by Vincent Driessen. It has attracted a lot of attention because it is very well suited to collaboration and scaling the development team.
 

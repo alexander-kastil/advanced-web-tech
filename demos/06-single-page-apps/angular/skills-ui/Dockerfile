@@ -1,6 +1,6 @@
 ##### Stage 1 - Create the build-image -> SDK, more vulnerabel, größer
 FROM node:14 as node
-LABEL author="Alexander Pajer"
+LABEL author="Alexander Kastil"
 WORKDIR /app
 COPY package.json package.json
 RUN npm install
@@ -21,5 +21,5 @@ COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
 # http://localhost:5052/
 
 # Publish Image to dockerhub
-# docker tag skillsui arambazamba/skillsui
-# docker push arambazamba/skillsui
+# docker tag skillsui alexander-kastil/skillsui
+# docker push alexander-kastil/skillsui
