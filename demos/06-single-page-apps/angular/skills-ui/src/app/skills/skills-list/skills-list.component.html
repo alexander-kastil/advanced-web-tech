@@ -1,6 +1,8 @@
 <h2>Here are the skills - Click to select</h2>
 <div class="boxed">
-  <div *ngFor="let sk of skills" (click)="selectSkill(sk)">
-    {{ sk.name }}
+  @for (skill of skills; track $index) {
+  <div (click)="selectSkill(skill)">
+    {{ skill.name }}
   </div>
+  }
 </div>

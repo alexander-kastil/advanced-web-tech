@@ -1,0 +1,5 @@
+<div class="navBar">
+  @for (link of navLinks | async; track $index) {
+    <a class="navItem" [routerLink]="[link.url]">{{ link.title }}</a>
+  }
+</div>
