@@ -1,5 +1,5 @@
 ##### Stage 1 - Create the build-image -> SDK, more vulnerabel, größer
-FROM node:14 as node
+FROM node:20 as node
 LABEL author="Alexander Kastil"
 WORKDIR /app
 COPY package.json package.json

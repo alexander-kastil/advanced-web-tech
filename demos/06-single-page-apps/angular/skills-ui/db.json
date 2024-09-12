@@ -39,5 +39,19 @@
       "id": 3,
       "mail": "giro.thegalgo@integrations.at"
     }
-  ]
+  ],
+  "menu": [
+    {
+        "title": "Home",
+        "url": "/"
+    },
+    {
+        "title": "Skills",
+        "url": "/skills"
+    },
+    {
+        "title": "About",
+        "url": "/about"
+    }
+]
 }
